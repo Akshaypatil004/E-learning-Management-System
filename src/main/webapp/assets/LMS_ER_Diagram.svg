@@ -1,0 +1,244 @@
+<svg width="1100" height="820" viewBox="0 0 1100 820" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+
+  <!-- Background -->
+  <rect width="1100" height="820" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#1a1a2e">LMS — Entity Relationship Diagram (Phase 2)</text>
+  <line x1="60" y1="50" x2="1040" y2="50" stroke="#cccccc" stroke-width="1"/>
+
+  <!-- ========== ENTITY: STUDENT ========== -->
+  <g id="student">
+    <rect x="40" y="70" width="180" height="180" rx="8" fill="#e8f4fd" stroke="#2980b9" stroke-width="1.5"/>
+    <!-- Header -->
+    <rect x="40" y="70" width="180" height="36" rx="8" fill="#2980b9"/>
+    <rect x="40" y="90" width="180" height="16" fill="#2980b9"/>
+    <text x="130" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">STUDENT</text>
+    <!-- PK row -->
+    <rect x="40" y="106" width="180" height="24" fill="#d6eaf8"/>
+    <text x="56" y="122" font-size="12" font-weight="700" fill="#1a5276">PK  student_id</text>
+    <text x="212" y="122" text-anchor="end" font-size="11" fill="#2471a3">INT</text>
+    <!-- Rows -->
+    <line x1="40" y1="130" x2="220" y2="130" stroke="#aed6f1" stroke-width="0.8"/>
+    <text x="56" y="145" font-size="12" fill="#1a5276">name</text>
+    <text x="212" y="145" text-anchor="end" font-size="11" fill="#2471a3">VARCHAR</text>
+    <line x1="40" y1="152" x2="220" y2="152" stroke="#aed6f1" stroke-width="0.8"/>
+    <text x="56" y="167" font-size="12" fill="#1a5276">email</text>
+    <text x="212" y="167" text-anchor="end" font-size="11" fill="#2471a3">VARCHAR</text>
+    <line x1="40" y1="174" x2="220" y2="174" stroke="#aed6f1" stroke-width="0.8"/>
+    <text x="56" y="189" font-size="12" fill="#1a5276">password_hash</text>
+    <text x="212" y="189" text-anchor="end" font-size="11" fill="#2471a3">VARCHAR</text>
+    <line x1="40" y1="196" x2="220" y2="196" stroke="#aed6f1" stroke-width="0.8"/>
+    <text x="56" y="211" font-size="12" fill="#1a5276">registered_on</text>
+    <text x="212" y="211" text-anchor="end" font-size="11" fill="#2471a3">DATE</text>
+    <line x1="40" y1="218" x2="220" y2="218" stroke="#aed6f1" stroke-width="0.8"/>
+    <rect x="40" y="218" width="180" height="32" rx="0" fill="none"/>
+    <rect x="40" y="242" width="180" height="8" rx="0" fill="#e8f4fd"/>
+  </g>
+
+  <!-- ========== ENTITY: INSTRUCTOR ========== -->
+  <g id="instructor">
+    <rect x="40" y="330" width="180" height="192" rx="8" fill="#e8f8f5" stroke="#1e8449" stroke-width="1.5"/>
+    <rect x="40" y="330" width="180" height="36" rx="8" fill="#1e8449"/>
+    <rect x="40" y="350" width="180" height="16" fill="#1e8449"/>
+    <text x="130" y="354" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">INSTRUCTOR</text>
+    <rect x="40" y="366" width="180" height="24" fill="#d5f5e3"/>
+    <text x="56" y="382" font-size="12" font-weight="700" fill="#145a32">PK  instructor_id</text>
+    <text x="212" y="382" text-anchor="end" font-size="11" fill="#1e8449">INT</text>
+    <line x1="40" y1="390" x2="220" y2="390" stroke="#a9dfbf" stroke-width="0.8"/>
+    <text x="56" y="405" font-size="12" fill="#145a32">name</text>
+    <text x="212" y="405" text-anchor="end" font-size="11" fill="#1e8449">VARCHAR</text>
+    <line x1="40" y1="412" x2="220" y2="412" stroke="#a9dfbf" stroke-width="0.8"/>
+    <text x="56" y="427" font-size="12" fill="#145a32">email</text>
+    <text x="212" y="427" text-anchor="end" font-size="11" fill="#1e8449">VARCHAR</text>
+    <line x1="40" y1="434" x2="220" y2="434" stroke="#a9dfbf" stroke-width="0.8"/>
+    <text x="56" y="449" font-size="12" fill="#145a32">password_hash</text>
+    <text x="212" y="449" text-anchor="end" font-size="11" fill="#1e8449">VARCHAR</text>
+    <line x1="40" y1="456" x2="220" y2="456" stroke="#a9dfbf" stroke-width="0.8"/>
+    <text x="56" y="471" font-size="12" fill="#145a32">bio</text>
+    <text x="212" y="471" text-anchor="end" font-size="11" fill="#1e8449">TEXT</text>
+    <line x1="40" y1="478" x2="220" y2="478" stroke="#a9dfbf" stroke-width="0.8"/>
+    <rect x="40" y="478" width="180" height="44" rx="0" fill="none"/>
+  </g>
+
+  <!-- ========== ENTITY: ADMIN ========== -->
+  <g id="admin">
+    <rect x="40" y="600" width="180" height="168" rx="8" fill="#fef9e7" stroke="#b7950b" stroke-width="1.5"/>
+    <rect x="40" y="600" width="180" height="36" rx="8" fill="#b7950b"/>
+    <rect x="40" y="620" width="180" height="16" fill="#b7950b"/>
+    <text x="130" y="624" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">ADMIN</text>
+    <rect x="40" y="636" width="180" height="24" fill="#fdebd0"/>
+    <text x="56" y="652" font-size="12" font-weight="700" fill="#7d6608">PK  admin_id</text>
+    <text x="212" y="652" text-anchor="end" font-size="11" fill="#b7950b">INT</text>
+    <line x1="40" y1="660" x2="220" y2="660" stroke="#f9e79f" stroke-width="0.8"/>
+    <text x="56" y="675" font-size="12" fill="#7d6608">name</text>
+    <text x="212" y="675" text-anchor="end" font-size="11" fill="#b7950b">VARCHAR</text>
+    <line x1="40" y1="682" x2="220" y2="682" stroke="#f9e79f" stroke-width="0.8"/>
+    <text x="56" y="697" font-size="12" fill="#7d6608">email</text>
+    <text x="212" y="697" text-anchor="end" font-size="11" fill="#b7950b">VARCHAR</text>
+    <line x1="40" y1="704" x2="220" y2="704" stroke="#f9e79f" stroke-width="0.8"/>
+    <text x="56" y="719" font-size="12" fill="#7d6608">password_hash</text>
+    <text x="212" y="719" text-anchor="end" font-size="11" fill="#b7950b">VARCHAR</text>
+    <line x1="40" y1="726" x2="220" y2="726" stroke="#f9e79f" stroke-width="0.8"/>
+    <rect x="40" y="726" width="180" height="42" rx="0" fill="none"/>
+  </g>
+
+  <!-- ========== ENTITY: COURSE ========== -->
+  <g id="course">
+    <rect x="420" y="70" width="200" height="192" rx="8" fill="#f5eef8" stroke="#7d3c98" stroke-width="1.5"/>
+    <rect x="420" y="70" width="200" height="36" rx="8" fill="#7d3c98"/>
+    <rect x="420" y="90" width="200" height="16" fill="#7d3c98"/>
+    <text x="520" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">COURSE</text>
+    <rect x="420" y="106" width="200" height="24" fill="#e8daef"/>
+    <text x="436" y="122" font-size="12" font-weight="700" fill="#4a235a">PK  course_id</text>
+    <text x="612" y="122" text-anchor="end" font-size="11" fill="#7d3c98">INT</text>
+    <line x1="420" y1="130" x2="620" y2="130" stroke="#d2b4de" stroke-width="0.8"/>
+    <rect x="420" y="130" width="200" height="24" fill="#f0e6f6"/>
+    <text x="436" y="146" font-size="12" font-weight="700" fill="#4a235a">FK  instructor_id</text>
+    <text x="612" y="146" text-anchor="end" font-size="11" fill="#7d3c98">INT</text>
+    <line x1="420" y1="154" x2="620" y2="154" stroke="#d2b4de" stroke-width="0.8"/>
+    <text x="436" y="169" font-size="12" fill="#4a235a">title</text>
+    <text x="612" y="169" text-anchor="end" font-size="11" fill="#7d3c98">VARCHAR</text>
+    <line x1="420" y1="176" x2="620" y2="176" stroke="#d2b4de" stroke-width="0.8"/>
+    <text x="436" y="191" font-size="12" fill="#4a235a">description</text>
+    <text x="612" y="191" text-anchor="end" font-size="11" fill="#7d3c98">TEXT</text>
+    <line x1="420" y1="198" x2="620" y2="198" stroke="#d2b4de" stroke-width="0.8"/>
+    <text x="436" y="213" font-size="12" fill="#4a235a">created_on</text>
+    <text x="612" y="213" text-anchor="end" font-size="11" fill="#7d3c98">DATE</text>
+    <line x1="420" y1="220" x2="620" y2="220" stroke="#d2b4de" stroke-width="0.8"/>
+    <rect x="420" y="220" width="200" height="42" fill="none"/>
+  </g>
+
+  <!-- ========== ENTITY: LESSON ========== -->
+  <g id="lesson">
+    <rect x="420" y="340" width="200" height="204" rx="8" fill="#fdf2e9" stroke="#ca6f1e" stroke-width="1.5"/>
+    <rect x="420" y="340" width="200" height="36" rx="8" fill="#ca6f1e"/>
+    <rect x="420" y="360" width="200" height="16" fill="#ca6f1e"/>
+    <text x="520" y="364" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">LESSON</text>
+    <rect x="420" y="376" width="200" height="24" fill="#fae5d3"/>
+    <text x="436" y="392" font-size="12" font-weight="700" fill="#784212">PK  lesson_id</text>
+    <text x="612" y="392" text-anchor="end" font-size="11" fill="#ca6f1e">INT</text>
+    <line x1="420" y1="400" x2="620" y2="400" stroke="#f0b27a" stroke-width="0.8"/>
+    <rect x="420" y="400" width="200" height="24" fill="#fdebd0"/>
+    <text x="436" y="416" font-size="12" font-weight="700" fill="#784212">FK  course_id</text>
+    <text x="612" y="416" text-anchor="end" font-size="11" fill="#ca6f1e">INT</text>
+    <line x1="420" y1="424" x2="620" y2="424" stroke="#f0b27a" stroke-width="0.8"/>
+    <text x="436" y="439" font-size="12" fill="#784212">title</text>
+    <text x="612" y="439" text-anchor="end" font-size="11" fill="#ca6f1e">VARCHAR</text>
+    <line x1="420" y1="446" x2="620" y2="446" stroke="#f0b27a" stroke-width="0.8"/>
+    <text x="436" y="461" font-size="12" fill="#784212">content_url</text>
+    <text x="612" y="461" text-anchor="end" font-size="11" fill="#ca6f1e">VARCHAR</text>
+    <line x1="420" y1="468" x2="620" y2="468" stroke="#f0b27a" stroke-width="0.8"/>
+    <text x="436" y="483" font-size="12" fill="#784212">order_index</text>
+    <text x="612" y="483" text-anchor="end" font-size="11" fill="#ca6f1e">INT</text>
+    <line x1="420" y1="490" x2="620" y2="490" stroke="#f0b27a" stroke-width="0.8"/>
+    <rect x="420" y="490" width="200" height="54" fill="none"/>
+  </g>
+
+  <!-- ========== ENTITY: ENROLLMENT (junction) ========== -->
+  <g id="enrollment">
+    <rect x="790" y="70" width="270" height="192" rx="8" fill="#eafaf1" stroke="#117a65" stroke-width="2"/>
+    <rect x="790" y="70" width="270" height="36" rx="8" fill="#117a65"/>
+    <rect x="790" y="90" width="270" height="16" fill="#117a65"/>
+    <text x="925" y="94" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">ENROLLMENT</text>
+    <text x="925" y="108" text-anchor="middle" font-size="10" fill="#a8e6cf">(junction table)</text>
+    <rect x="790" y="106" width="270" height="24" fill="#d0efe8"/>
+    <text x="808" y="122" font-size="12" font-weight="700" fill="#0a4d3c">PK  enrollment_id</text>
+    <text x="1052" y="122" text-anchor="end" font-size="11" fill="#117a65">INT</text>
+    <line x1="790" y1="130" x2="1060" y2="130" stroke="#76d7c4" stroke-width="0.8"/>
+    <rect x="790" y="130" width="270" height="24" fill="#e8f8f5"/>
+    <text x="808" y="146" font-size="12" font-weight="700" fill="#0a4d3c">FK  student_id</text>
+    <text x="1052" y="146" text-anchor="end" font-size="11" fill="#117a65">INT</text>
+    <line x1="790" y1="154" x2="1060" y2="154" stroke="#76d7c4" stroke-width="0.8"/>
+    <rect x="790" y="154" width="270" height="24" fill="#e8f8f5"/>
+    <text x="808" y="170" font-size="12" font-weight="700" fill="#0a4d3c">FK  course_id</text>
+    <text x="1052" y="170" text-anchor="end" font-size="11" fill="#117a65">INT</text>
+    <line x1="790" y1="178" x2="1060" y2="178" stroke="#76d7c4" stroke-width="0.8"/>
+    <text x="808" y="193" font-size="12" fill="#0a4d3c">enrolled_on</text>
+    <text x="1052" y="193" text-anchor="end" font-size="11" fill="#117a65">DATE</text>
+    <line x1="790" y1="200" x2="1060" y2="200" stroke="#76d7c4" stroke-width="0.8"/>
+    <rect x="790" y="200" width="270" height="62" fill="none"/>
+  </g>
+
+  <!-- ========== ENTITY: PROGRESS (junction) ========== -->
+  <g id="progress">
+    <rect x="790" y="340" width="270" height="216" rx="8" fill="#f4ecf7" stroke="#6c3483" stroke-width="2"/>
+    <rect x="790" y="340" width="270" height="36" rx="8" fill="#6c3483"/>
+    <rect x="790" y="360" width="270" height="16" fill="#6c3483"/>
+    <text x="925" y="364" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">PROGRESS</text>
+    <text x="925" y="378" text-anchor="middle" font-size="10" fill="#d2b4de">(junction table)</text>
+    <rect x="790" y="376" width="270" height="24" fill="#e8daef"/>
+    <text x="808" y="392" font-size="12" font-weight="700" fill="#4a235a">PK  progress_id</text>
+    <text x="1052" y="392" text-anchor="end" font-size="11" fill="#6c3483">INT</text>
+    <line x1="790" y1="400" x2="1060" y2="400" stroke="#c39bd3" stroke-width="0.8"/>
+    <rect x="790" y="400" width="270" height="24" fill="#f0e6f6"/>
+    <text x="808" y="416" font-size="12" font-weight="700" fill="#4a235a">FK  student_id</text>
+    <text x="1052" y="416" text-anchor="end" font-size="11" fill="#6c3483">INT</text>
+    <line x1="790" y1="424" x2="1060" y2="424" stroke="#c39bd3" stroke-width="0.8"/>
+    <rect x="790" y="424" width="270" height="24" fill="#f0e6f6"/>
+    <text x="808" y="440" font-size="12" font-weight="700" fill="#4a235a">FK  lesson_id</text>
+    <text x="1052" y="440" text-anchor="end" font-size="11" fill="#6c3483">INT</text>
+    <line x1="790" y1="448" x2="1060" y2="448" stroke="#c39bd3" stroke-width="0.8"/>
+    <text x="808" y="463" font-size="12" fill="#4a235a">is_completed</text>
+    <text x="1052" y="463" text-anchor="end" font-size="11" fill="#6c3483">BOOLEAN</text>
+    <line x1="790" y1="470" x2="1060" y2="470" stroke="#c39bd3" stroke-width="0.8"/>
+    <text x="808" y="485" font-size="12" fill="#4a235a">completed_on</text>
+    <text x="1052" y="485" text-anchor="end" font-size="11" fill="#6c3483">DATE</text>
+    <line x1="790" y1="492" x2="1060" y2="492" stroke="#c39bd3" stroke-width="0.8"/>
+    <rect x="790" y="492" width="270" height="64" fill="none"/>
+  </g>
+
+  <!-- ========== RELATIONSHIPS ========== -->
+
+  <!-- Instructor (right) → Course (left): 1:N "creates" -->
+  <line x1="220" y1="430" x2="420" y2="166" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="295" y="280" font-size="11" fill="#555555" font-style="italic">creates</text>
+  <!-- Cardinality -->
+  <text x="224" y="426" font-size="12" font-weight="700" fill="#1e8449">1</text>
+  <text x="400" y="162" font-size="12" font-weight="700" fill="#7d3c98">N</text>
+
+  <!-- Course (bottom) → Lesson (top): 1:N "contains" -->
+  <line x1="520" y1="262" x2="520" y2="340" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="528" y="306" font-size="11" fill="#555555" font-style="italic">contains</text>
+  <text x="506" y="278" font-size="12" font-weight="700" fill="#7d3c98">1</text>
+  <text x="506" y="336" font-size="12" font-weight="700" fill="#ca6f1e">N</text>
+
+  <!-- Student (right) → Enrollment (left): 1:N -->
+  <line x1="220" y1="160" x2="790" y2="140" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="460" y="138" font-size="11" fill="#555555" font-style="italic">enrolls</text>
+  <text x="224" y="156" font-size="12" font-weight="700" fill="#2980b9">1</text>
+  <text x="770" y="136" font-size="12" font-weight="700" fill="#117a65">N</text>
+
+  <!-- Course (right) → Enrollment (left): 1:N -->
+  <line x1="620" y1="166" x2="790" y2="166" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="690" y="158" font-size="11" fill="#555555" font-style="italic">receives</text>
+  <text x="624" y="162" font-size="12" font-weight="700" fill="#7d3c98">1</text>
+  <text x="772" y="162" font-size="12" font-weight="700" fill="#117a65">N</text>
+
+  <!-- Student (right) → Progress (left): 1:N -->
+  <line x1="220" y1="200" x2="790" y2="414" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="430" y="350" font-size="11" fill="#555555" font-style="italic">tracks</text>
+  <text x="224" y="196" font-size="12" font-weight="700" fill="#2980b9">1</text>
+  <text x="772" y="410" font-size="12" font-weight="700" fill="#6c3483">N</text>
+
+  <!-- Lesson (right) → Progress (left): 1:N -->
+  <line x1="620" y1="440" x2="790" y2="440" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="682" y="432" font-size="11" fill="#555555" font-style="italic">tracked by</text>
+  <text x="624" y="436" font-size="12" font-weight="700" fill="#ca6f1e">1</text>
+  <text x="772" y="436" font-size="12" font-weight="700" fill="#6c3483">N</text>
+
+  <!-- ========== LEGEND ========== -->
+  <rect x="40" y="770" width="1020" height="38" rx="6" fill="#f0f0f0" stroke="#cccccc" stroke-width="1"/>
+  <text x="60" y="793" font-size="12" font-weight="700" fill="#333333">Legend:</text>
+  <rect x="110" y="779" width="14" height="14" rx="2" fill="#d6eaf8" stroke="#2980b9" stroke-width="1.5"/>
+  <text x="130" y="792" font-size="11" fill="#333">Student/Instructor/Admin</text>
+  <rect x="310" y="779" width="14" height="14" rx="2" fill="#e8daef" stroke="#7d3c98" stroke-width="1.5"/>
+  <text x="330" y="792" font-size="11" fill="#333">Course/Lesson</text>
+  <rect x="460" y="779" width="14" height="14" rx="2" fill="#d0efe8" stroke="#117a65" stroke-width="2"/>
+  <text x="480" y="792" font-size="11" fill="#333">Junction tables (M:N resolved)</text>
+  <line x1="680" y1="786" x2="720" y2="786" stroke="#555555" stroke-width="1.5" stroke-dasharray="6,3"/>
+  <text x="728" y="792" font-size="11" fill="#333">Relationship</text>
+  <text x="830" y="792" font-size="11" font-weight="700" fill="#333">PK = Primary Key</text>
+  <text x="950" y="792" font-size="11" font-weight="700" fill="#333">FK = Foreign Key</text>
+
+</svg>

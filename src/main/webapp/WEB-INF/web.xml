@@ -1,7 +1,113 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee
+         https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
 
-<web-app>
-  <display-name>Archetype Created Web Application</display-name>
+    <display-name>LMS - E-Learning Management System</display-name>
+
+    <!-- Login / Logout / Register -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.lms.servlet.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.lms.servlet.LogoutServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.lms.servlet.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <!-- Courses -->
+    <servlet>
+        <servlet-name>CourseServlet</servlet-name>
+        <servlet-class>com.lms.servlet.CourseServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CourseServlet</servlet-name>
+        <url-pattern>/courses</url-pattern>
+    </servlet-mapping>
+
+    <!-- Lessons -->
+    <servlet>
+        <servlet-name>LessonServlet</servlet-name>
+        <servlet-class>com.lms.servlet.LessonServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LessonServlet</servlet-name>
+        <url-pattern>/lessons</url-pattern>
+    </servlet-mapping>
+
+    <!-- Enrollment -->
+    <servlet>
+        <servlet-name>EnrollServlet</servlet-name>
+        <servlet-class>com.lms.servlet.EnrollServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EnrollServlet</servlet-name>
+        <url-pattern>/enroll</url-pattern>
+    </servlet-mapping>
+
+    <!-- Progress -->
+    <servlet>
+        <servlet-name>ProgressServlet</servlet-name>
+        <servlet-class>com.lms.servlet.ProgressServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ProgressServlet</servlet-name>
+        <url-pattern>/progress</url-pattern>
+    </servlet-mapping>
+
+    <!-- Dashboard -->
+    <servlet>
+        <servlet-name>DashboardServlet</servlet-name>
+        <servlet-class>com.lms.servlet.DashboardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DashboardServlet</servlet-name>
+        <url-pattern>/dashboard</url-pattern>
+    </servlet-mapping>
+
+    <!-- Admin -->
+    <servlet>
+        <servlet-name>AdminServlet</servlet-name>
+        <servlet-class>com.lms.servlet.AdminServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminServlet</servlet-name>
+        <url-pattern>/admin</url-pattern>
+    </servlet-mapping>
+
+    <!-- Welcome page -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+    <!-- Error page -->
+    <error-page>
+        <error-code>404</error-code>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+    <error-page>
+        <error-code>500</error-code>
+        <location>/jsp/error.jsp</location>
+    </error-page>
+
 </web-app>
