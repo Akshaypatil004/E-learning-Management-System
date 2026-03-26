@@ -1,0 +1,8 @@
+com\lms\model\Course.class
+com\lms\model\Progress.class
+com\lms\model\Enrollment.class
+com\lms\model\Lesson.class
+com\lms\model\Admin.class
+com\lms\model\Instructor.class
+com\lms\util\DBConnectionPool.class
+com\lms\model\Student.class
